@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GlowAura brand palette (mirrors the values previously used by the Compose theme) -->
+    <color name="glow_primary">#FF9B5DE5</color>
+    <color name="glow_primary_dark">#FF7B3FBF</color>
+    <color name="glow_primary_light">#FFE9D5FF</color>
+    <color name="glow_secondary">#FFF15BB5</color>
+    <color name="glow_secondary_light">#FFFFD6EE</color>
+    <color name="glow_tertiary">#FF00BBF9</color>
+    <color name="glow_accent">#FF00F5D4</color>
+    <color name="glow_highlight">#FFFEE440</color>
+
+    <!-- Light scheme surfaces -->
+    <color name="light_background">#FFFFFBFF</color>
+    <color name="light_surface">#FFF8F6FF</color>
+    <color name="light_on_surface">#FF1A1A2E</color>
+    <color name="light_outline">#FFCAC4D0</color>
+
+    <!-- Dark scheme surfaces -->
+    <color name="dark_background">#FF0A0A0F</color>
+    <color name="dark_surface">#FF1A1A2E</color>
+    <color name="dark_surface_variant">#FF16213E</color>
+    <color name="dark_on_surface">#FFE5E5E5</color>
+    <color name="dark_outline">#FF48454E</color>
+
+    <!-- Status colours used by the password strength meter -->
+    <color name="status_success">#FF4CAF50</color>
+    <color name="status_warning">#FFFF9800</color>
+    <color name="status_error">#FFF44336</color>
+
+    <color name="error_container_light">#FFFCE4E6</color>
+    <color name="on_error_container_light">#FF8C1D18</color>
+    <color name="error_container_dark">#FF5C1A18</color>
+    <color name="on_error_container_dark">#FFFCE4E6</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

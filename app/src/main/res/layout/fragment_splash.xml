@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <View
+        android:id="@+id/logoContainer"
+        android:layout_width="@dimen/brand_logo_size"
+        android:layout_height="@dimen/brand_logo_size"
+        android:background="@drawable/bg_logo_gradient"
+        app:layout_constraintBottom_toTopOf="@id/logoIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/cd_brand_logo"
+        android:src="@drawable/ic_sparkle"
+        app:layout_constraintBottom_toTopOf="@id/brandName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoContainer"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/splash_tagline"
+        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintBottom_toTopOf="@id/loadingIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoIcon" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:contentDescription="@string/splash_loading"
+        android:indeterminate="true"
+        app:indicatorSize="@dimen/progress_indicator_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brandName"
+        app:trackThickness="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

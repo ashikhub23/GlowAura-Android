@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.GlowAura" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/glow_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/dark_surface_variant</item>
+        <item name="colorOnPrimaryContainer">@color/dark_on_surface</item>
+
+        <item name="colorSecondary">@color/glow_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/dark_surface_variant</item>
+        <item name="colorOnSecondaryContainer">@color/dark_on_surface</item>
+
+        <item name="colorTertiary">@color/glow_tertiary</item>
+        <item name="colorOnTertiary">@color/dark_background</item>
+
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorOnBackground">@color/dark_on_surface</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        <item name="colorSurfaceVariant">@color/dark_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/dark_on_surface</item>
+        <item name="colorOutline">@color/dark_outline</item>
+        <item name="colorOutlineVariant">@color/dark_outline</item>
+
+        <item name="colorError">@color/status_error</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/error_container_dark</item>
+        <item name="colorOnErrorContainer">@color/on_error_container_dark</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+</resources>

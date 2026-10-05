@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_medium">12dp</dimen>
+    <dimen name="radius_large">16dp</dimen>
+
+    <dimen name="button_min_height">52dp</dimen>
+    <dimen name="button_corner">16dp</dimen>
+
+    <dimen name="progress_indicator_size">24dp</dimen>
+    <dimen name="strength_bar_height">6dp</dimen>
+    <dimen name="brand_logo_size">96dp</dimen>
+</resources>

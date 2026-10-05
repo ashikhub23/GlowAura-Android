@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GlowAura</string>
+
+    <!-- OAuth client id of type "Web" from the Firebase project settings.
+         Replace with your own value to enable Google Sign-In.
+         This is NOT the Android SHA-1 client id. -->
+    <string name="google_web_client_id" translatable="false"></string>
+
+    <!-- Content descriptions -->
+    <string name="cd_navigate_back">Navigate back</string>
+    <string name="cd_hide_password">Hide password</string>
+    <string name="cd_show_password">Show password</string>
+    <string name="cd_error">Error</string>
+    <string name="cd_brand_logo">GlowAura logo</string>
+
+    <!-- Auth: login -->
+    <string name="auth_welcome_back">Welcome back</string>
+    <string name="auth_login_subtitle">Sign in to continue shopping GlowAura.</string>
+    <string name="auth_or_continue_with">or continue with</string>
+    <string name="auth_sign_in_with_google">Continue with Google</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_signing_in">Signing in…</string>
+    <string name="auth_sign_out">Sign out</string>
+    <string name="auth_forgot_password">Forgot password?</string>
+    <string name="auth_no_account">Don\'t have an account?</string>
+    <string name="auth_create_account">Create account</string>
+
+    <!-- Auth: register -->
+    <string name="auth_create_account_title">Create account</string>
+    <string name="auth_register_subtitle">Join GlowAura to unlock the full collection.</string>
+    <string name="auth_full_name">Full name</string>
+    <string name="auth_confirm_password">Confirm password</string>
+    <string name="auth_sign_up">Create account</string>
+    <string name="auth_creating_account">Creating account…</string>
+    <string name="auth_already_have_account">Already have an account?</string>
+    <string name="auth_strength_none">Password strength</string>
+    <string name="auth_strength_weak">Weak password</string>
+    <string name="auth_strength_fair">Fair password</string>
+    <string name="auth_strength_strong">Strong password</string>
+
+    <!-- Auth: forgot password -->
+    <string name="auth_forgot_password_title">Reset password</string>
+    <string name="auth_forgot_password_subtitle">Enter the email address linked to your GlowAura account and we\'ll send you a reset link.</string>
+    <string name="auth_send_reset_link">Send reset link</string>
+    <string name="auth_sending">Sending…</string>
+    <string name="auth_reset_link_sent_title">Check your inbox</string>
+    <string name="auth_reset_link_sent_body">We sent a password reset link to %1$s.</string>
+    <string name="auth_reset_link_spam_hint">Didn\'t get it? Check your spam folder or junk mail.</string>
+    <string name="auth_resend_link">Resend</string>
+    <string name="auth_back_to_login">Back to sign in</string>
+
+    <!-- Auth: reset link confirmation -->
+    <string name="auth_reset_link_sent_banner">We sent a password reset link to %1$s. Check your spam folder if it does not arrive.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hello, %1$s</string>
+    <string name="home_greeting_generic">Welcome to GlowAura</string>
+    <string name="home_signed_in_as">Signed in as %1$s</string>
+    <string name="home_placeholder_message">The shop is coming soon. You\'re signed in.</string>
+    <string name="home_debug_uid">UID: %1$s</string>
+
+    <!-- Cart / profile placeholders -->
+    <string name="cart_title">Cart</string>
+    <string name="cart_placeholder_message">Your cart is empty.</string>
+    <string name="profile_title">Profile</string>
+    <string name="profile_placeholder_message">Profile details will appear here.</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">GlowAura</string>
+    <string name="splash_loading">Loading</string>
+
+    <!-- Navigation destinations -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_profile">Profile</string>
+    <string name="action_cart">Open cart</string>
+    <string name="action_profile">Open profile</string>
+</resources>

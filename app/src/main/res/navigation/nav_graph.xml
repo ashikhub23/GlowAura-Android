@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!--
+      Auth graph. Splash is the start destination and is popped inclusively whenever
+      MainActivity switches to another root, so back never returns to it.
+    -->
+    <navigation
+        android:id="@+id/auth_graph"
+        app:startDestination="@id/loginFragment">
+
+        <fragment
+            android:id="@+id/splashFragment"
+            android:name="com.glowaura.app.presentation.screens.splash.SplashFragment"
+            android:label="Splash"
+            tools:layout="@layout/fragment_splash" />
+
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.glowaura.app.presentation.screens.login.LoginFragment"
+            android:label="Sign in"
+            tools:layout="@layout/fragment_login">
+
+            <action
+                android:id="@+id/action_login_to_register"
+                app:destination="@id/registerFragment" />
+
+            <action
+                android:id="@+id/action_login_to_forgot_password"
+                app:destination="@id/forgotPasswordFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.glowaura.app.presentation.screens.register.RegisterFragment"
+            android:label="Create account"
+            tools:layout="@layout/fragment_register" />
+
+        <fragment
+            android:id="@+id/forgotPasswordFragment"
+            android:name="com.glowaura.app.presentation.screens.forgotpassword.ForgotPasswordFragment"
+            android:label="Reset password"
+            tools:layout="@layout/fragment_forgot_password" />
+
+    </navigation>
+
+    <!-- Signed-in graph. Reached only through MainActivity's session observation. -->
+    <navigation
+        android:id="@+id/app_graph"
+        app:startDestination="@id/homeFragment">
+
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.glowaura.app.presentation.screens.home.HomeFragment"
+            android:label="Home"
+            tools:layout="@layout/fragment_home">
+
+            <action
+                android:id="@+id/action_home_to_cart"
+                app:destination="@id/cartFragment" />
+
+            <action
+                android:id="@+id/action_home_to_profile"
+                app:destination="@id/profileFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/cartFragment"
+            android:name="com.glowaura.app.presentation.screens.cart.CartFragment"
+            android:label="Cart"
+            tools:layout="@layout/fragment_cart" />
+
+        <fragment
+            android:id="@+id/profileFragment"
+            android:name="com.glowaura.app.presentation.screens.profile.ProfileFragment"
+            android:label="Profile"
+            tools:layout="@layout/fragment_profile" />
+
+    </navigation>
+
+</navigation>

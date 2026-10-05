@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Material 3 base theme for the whole app. -->
+    <style name="Theme.GlowAura" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/glow_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/glow_primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/light_on_surface</item>
+
+        <item name="colorSecondary">@color/glow_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/glow_secondary_light</item>
+        <item name="colorOnSecondaryContainer">@color/light_on_surface</item>
+
+        <item name="colorTertiary">@color/glow_tertiary</item>
+        <item name="colorOnTertiary">@color/light_on_surface</item>
+
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="colorOnBackground">@color/light_on_surface</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="colorSurfaceVariant">@color/light_surface</item>
+        <item name="colorOnSurfaceVariant">@color/light_on_surface</item>
+        <item name="colorOutline">@color/light_outline</item>
+        <item name="colorOutlineVariant">@color/light_outline</item>
+
+        <item name="colorError">@color/status_error</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/error_container_light</item>
+        <item name="colorOnErrorContainer">@color/on_error_container_light</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- Brand-styled primary button used across the auth screens. -->
+    <style name="Widget.GlowAura.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="cornerRadius">@dimen/radius_large</item>
+    </style>
+
+    <style name="Widget.GlowAura.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="cornerRadius">@dimen/radius_large</item>
+    </style>
+
+    <style name="Widget.GlowAura.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.GlowAura.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_medium</item>
+    </style>
+
+    <style name="TextAppearance.GlowAura.ScreenTitle" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.GlowAura.ScreenSubtitle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="TextAppearance.GlowAura.FieldError" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+
+</resources>
